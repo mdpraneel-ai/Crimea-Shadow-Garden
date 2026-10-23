@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Garden - Tier List</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background: #151515;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .tier {
+            display: flex;
+            min-height: 100px;
+            margin-bottom: 5px;
+            background: #303030;
+        }
+
+        .rank {
+            width: 90px;
+            min-width: 90px;
+            display: grid;
+            place-items: center;
+            color: black;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .images {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            gap: 8px;
+            padding: 10px;
+            min-height: 80px;
+        }
+
+        .images img {
+            width: 85px;
+            height: 85px;
+            object-fit: cover;
+            cursor: grab;
+            border-radius: 5px;
+        }
+
+        .images.drag-over {
+            outline: 3px dashed white;
+            outline-offset: -4px;
+        }
+
+        #pool {
+            border: 2px dashed #777;
+        }
+
+        a { color: #bbaaff; }
+    </style>
+</head>
+
+<body>
+
+    <h1>🌑 Shadow Garden</h1>
+    <h2>Anime Tier List Maker</h2>
+
+    <a href="index.html">Home</a> |
+    <a href="library.html">Photo Library</a>
+
+    <p>Drag your images into the ranks below.</p>
+    <p id="status">Loading images...</p>
+
+    <div class="tier">
+        <div class="rank" style="background:#ff7f7f">S</div>
+        <div class="images" id="S"></div>
+    </div>
+
+    <div class="tier">
+        <div class="rank" style="background:#ffbf7f">A</div>
+        <div class="images" id="A"></div>
+    </div>
+
+    <div class="tier">
+        <div class="rank" style="background:#ffff7f">B</div>
+        <div class="images" id="B"></div>
+    </div>
+
+    <div class="tier">
+        <div class="rank" style="background:#7fff7f">C</div>
+        <div class="images" id="C"></div>
+    </div>
+
+    <div class="tier">
+        <div class="rank" style="background:#7fbfff">D</div>
+        <div class="images" id="D"></div>
+    </div>
+
+    <h2>Unranked Images</h2>
+    <div class="images" id="pool"></div>
+
+    <script src="tier.js"></script>
+</body>
+</html>
