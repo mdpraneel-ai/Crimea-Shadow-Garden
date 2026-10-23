@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shadow Garden  </title>
+    <title>Shadow Garden</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1> Crimea 
-        Shadow Garden </h1>
-    <p>Welcome to Shadow Garden
-
-    </p>
+    <h1>Crimea Shadow Garden</h1>
+    <p>Welcome to Shadow Garden</p>
 
     <h2>My Dashboard</h2>
 
-    <button>Anime Tier List</button>
-    <button onclick="window.location.href='library.html'">
-    My Photo Library
-    </button>
-    <button>Saved Rankings</button>
+    <div class="dashboard-buttons">
+        <a href="tier.html" class="tier-btn">🏆 Open Tier List Maker</a>
+        <button class="dash-btn" onclick="window.location.href='library.html'">
+            My Photo Library
+        </button>
+    </div>
 
     <script src="script.js"></script>
     <script type="module" src="firebase.js"></script>
