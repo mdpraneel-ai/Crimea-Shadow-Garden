@@ -1,0 +1,113 @@
+body {
+    background-color: #121212;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: #ff4757;
+}
+
+button {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff6b81;
+}
+
+
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    margin: 10px;
+}
+
+.anime-folder {
+    background: #242424;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 700px;
+    text-align: left;
+}
+.anime-folder h3 {
+    color: #ff4757;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.gallery img {
+    width: 110px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+.dashboard-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 16px;
+}
+
+.tier-btn,
+.dash-btn {
+    display: inline-block;
+    margin: 0;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.tier-btn {
+    color: #1a1a1a;
+    background: linear-gradient(135deg, #ffd54a, #ff9f1a);
+    box-shadow: 0 4px 14px rgba(255, 159, 26, 0.35);
+}
+
+.dash-btn {
+    color: #fff;
+    background: #3a3f5c;
+}
+
+.tier-btn:hover,
+.dash-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.tier-btn:hover {
+    background: linear-gradient(135deg, #ffe07a, #ffb04a);
+}
+
+button.dash-btn:hover {
+    background: #4d5380;
+}
